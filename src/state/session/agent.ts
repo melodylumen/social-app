@@ -1,12 +1,16 @@
-import {AtpSessionData, AtpSessionEvent, BskyAgent} from '@atproto/api'
+import {
+  type AtpSessionData,
+  type AtpSessionEvent,
+  BskyAgent,
+} from '@atproto/api'
 import {TID} from '@atproto/common-web'
 
 import {networkRetry} from '#/lib/async/retry'
 import {
-  BSKY_SERVICE,
   DISCOVER_SAVED_FEED,
+  GNDR_SERVICE,
   IS_PROD_SERVICE,
-  PUBLIC_BSKY_SERVICE,
+  PUBLIC_GNDR_SERVICE,
   TIMELINE_SAVED_FEED,
 } from '#/lib/constants'
 import {tryFetchGates} from '#/lib/statsig/statsig'
@@ -19,12 +23,12 @@ import {
   configureModerationForAccount,
   configureModerationForGuest,
 } from './moderation'
-import {SessionAccount} from './types'
+import {type SessionAccount} from './types'
 import {isSessionExpired, isSignupQueued} from './util'
 
 export function createPublicAgent() {
   configureModerationForGuest() // Side effect but only relevant for tests
-  return new BskyAppAgent({service: PUBLIC_BSKY_SERVICE})
+  return new BskyAppAgent({service: PUBLIC_GNDR_SERVICE})
 }
 
 export async function createAgentAndResume(
@@ -210,7 +214,7 @@ export function agentToSessionAccount(
     active: agent.session.active,
     status: agent.session.status as SessionAccount['status'],
     pdsUrl: agent.pdsUrl?.toString(),
-    isSelfHosted: !agent.serviceUrl.toString().startsWith(BSKY_SERVICE),
+    isSelfHosted: !agent.serviceUrl.toString().startsWith(GNDR_SERVICE),
   }
 }
 

@@ -2,17 +2,16 @@ import {AtUri} from '@atproto/api'
 import psl from 'psl'
 import TLDs from 'tlds'
 
-import {BSKY_SERVICE} from '#/lib/constants'
+import {GNDR_SERVICE} from '#/lib/constants'
 import {isInvalidHandle} from '#/lib/strings/handles'
 import {startUriToStarterPackUri} from '#/lib/strings/starter-pack'
 import {logger} from '#/logger'
 
-export const BSKY_APP_HOST = 'https://bsky.app'
-const BSKY_TRUSTED_HOSTS = [
+export const GNDR_APP_HOST = 'https://bsky.app' // TODO - replace with real url
+const GNDR_TRUSTED_HOSTS = [
   'bsky\\.app',
   'bsky\\.social',
-  'blueskyweb\\.xyz',
-  'blueskyweb\\.zendesk\\.com',
+  // TODO - Add in other trusted hosts here - eg helpdesk or support
   ...(__DEV__ ? ['localhost:19006', 'localhost:8100'] : []),
 ]
 
@@ -21,7 +20,7 @@ const BSKY_TRUSTED_HOSTS = [
  * It will also allow relative paths like /profile as well as #.
  */
 const TRUSTED_REGEX = new RegExp(
-  `^(http(s)?://(([\\w-]+\\.)?${BSKY_TRUSTED_HOSTS.join(
+  `^(http(s)?://(([\\w-]+\\.)?${GNDR_TRUSTED_HOSTS.join(
     '|([\\w-]+\\.)?',
   )})|/|#)`,
 )
@@ -51,8 +50,8 @@ export function makeRecordUri(
 export function toNiceDomain(url: string): string {
   try {
     const urlp = new URL(url)
-    if (`https://${urlp.host}` === BSKY_SERVICE) {
-      return 'Bluesky Social'
+    if (`https://${urlp.host}` === GNDR_SERVICE) {
+      return 'Gander Social'
     }
     return urlp.host ? urlp.host : url
   } catch (e) {
@@ -79,7 +78,7 @@ export function toShortUrl(url: string): string {
 
 export function toShareUrl(url: string): string {
   if (!url.startsWith('https')) {
-    const urlp = new URL('https://bsky.app')
+    const urlp = new URL('https://bsky.app') // TODO - replace with a constant - this should not be hardcoded
     urlp.pathname = url
     url = urlp.toString()
   }
@@ -87,17 +86,18 @@ export function toShareUrl(url: string): string {
 }
 
 export function toBskyAppUrl(url: string): string {
-  return new URL(url, BSKY_APP_HOST).toString()
+  return new URL(url, GNDR_APP_HOST).toString()
 }
 
 export function isBskyAppUrl(url: string): boolean {
-  return url.startsWith('https://bsky.app/')
+  return url.startsWith('https://bsky.app/') // TODO - replace with a constant - this should not be hardcoded
 }
 
 export function isRelativeUrl(url: string): boolean {
   return /^\/[^/]/.test(url)
 }
 
+// TODO - replace with a constant - this should not be hardcoded
 export function isBskyRSSUrl(url: string): boolean {
   return (
     (url.startsWith('https://bsky.app/') || isRelativeUrl(url)) &&
@@ -300,7 +300,7 @@ export function isPossiblyAUrl(str: string): boolean {
   if (str.startsWith('https://')) {
     return true
   }
-  const [firstWord] = str.split(/[\s\/]/)
+  const [firstWord] = str.split(/[\s/]/)
   return isValidDomain(firstWord)
 }
 
@@ -316,8 +316,8 @@ export function splitApexDomain(hostname: string): [string, string] {
 }
 
 export function createBskyAppAbsoluteUrl(path: string): string {
-  const sanitizedPath = path.replace(BSKY_APP_HOST, '').replace(/^\/+/, '')
-  return `${BSKY_APP_HOST.replace(/\/$/, '')}/${sanitizedPath}`
+  const sanitizedPath = path.replace(GNDR_APP_HOST, '').replace(/^\/+/, '')
+  return `${GNDR_APP_HOST.replace(/\/$/, '')}/${sanitizedPath}`
 }
 
 export function createProxiedUrl(url: string): string {
