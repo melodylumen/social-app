@@ -147,8 +147,8 @@ function DialogInner({
         {fixedOption === GNDR_SERVICE && isFirstTimeUser && (
           <Admonition type="tip">
             <Trans>
-              Bluesky is an open network where you can choose your own provider.
-              If you're new here, we recommend sticking with the default Bluesky
+              Gander is an open network where you can choose your own provider.
+              If you're new here, we recommend sticking with the default Gander
               Social option.
             </Trans>
           </Admonition>
@@ -210,7 +210,7 @@ function DialogInner({
               </Trans>
             ) : (
               <Trans>
-                Bluesky is an open network where you can choose your hosting
+                Gander is an open network where you can choose your hosting
                 provider. If you're a developer, you can host your own server.
               </Trans>
             )}{' '}

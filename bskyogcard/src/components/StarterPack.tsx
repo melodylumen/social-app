@@ -1,6 +1,6 @@
 /* eslint-disable bsky-internal/avoid-unwrapped-text */
-import React from 'react'
-import {AppBskyGraphDefs, AppBskyGraphStarterpack} from '@atproto/api'
+// import React from 'react'
+import {type AppBskyGraphDefs, AppBskyGraphStarterpack} from '@atproto/api'
 
 import {Butterfly} from './Butterfly.js'
 import {Img} from './Img.js'
@@ -107,7 +107,7 @@ export function StarterPack(props: {
             padding: 60,
             fontSize: 40,
           }}>
-          JOIN THE CONVERSATION
+          FIND YOUR SMILE
         </div>
         <div style={{display: 'flex'}}>
           {imagesAcross.map((image, i) => {

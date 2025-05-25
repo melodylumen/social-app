@@ -1,0 +1,32 @@
+msgid ""
+msgstr ""
+"Language: miq\n"
+
+#: src/screens/Settings/AccountSettings.tsx:68
+msgid "(no email)"
+msgstr "(mimajul aqq wla)’tuk)"
+
+#: src/lib/hooks/useTimeAgo.ts:169
+msgid "{0, plural, one {# day} other {# days}}"
+msgstr "{0, plural, one {# najiw} other {# najiw aqq}}"
+
+#: src/screens/Profile/ProfileFollowers.tsx:40
+msgid "{0, plural, one {# follower} other {# followers}}"
+msgstr "{0, plural, one {# matues} other {# matuesl}}"
+
+#: src/screens/Profile/ProfileFollows.tsx:40
+msgid "{0, plural, one {# following} other {# following}}"
+msgstr "{0, plural, one {# matues} other {# matuesl}}"
+
+#: src/lib/hooks/useTimeAgo.ts:159
+msgid "{0, plural, one {# hour} other {# hours}}"
+msgstr "{0, plural, one {# tepiaq} other {# tepiaq aqq}}"
+
+#: src/components/moderation/LabelsOnMe.tsx:53
+msgid "{0, plural, one {# label has} other {# labels have}} been placed on this account"
+msgstr "{0, plural, one {# matues} other {# matuesl}} aqq aqq wla’tuk."
+
+#: src/components/moderation/LabelsOnMe.tsx:62
+msgid "{0, plural, one {# label has} other {# labels have}} been placed on this content"
+msgstr "{0, plural, one {# matues} other {# matuesl}} aqq aqq wla’tuk."
+

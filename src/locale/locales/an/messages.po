@@ -4148,13 +4148,13 @@ msgstr "Fayenas"
 #: src/screens/StarterPack/StarterPackLandingScreen.tsx:211
 #: src/screens/StarterPack/StarterPackScreen.tsx:461
 #: src/screens/StarterPack/StarterPackScreen.tsx:472
-msgid "Join Bluesky"
-msgstr "Une-te a Bluesky"
+msgid "Join Gander"
+msgstr "Une-te a Gander"
 
 #: src/components/StarterPack/QrCode.tsx:68
 #: src/view/shell/NavSignupCard.tsx:40
-msgid "Join the conversation"
-msgstr "Une-te a la conversa"
+msgid "Find your smile"
+msgstr "Encuentra tu sonrisa"
 
 #: src/screens/Onboarding/index.tsx:21
 #: src/screens/Onboarding/state.ts:104
@@ -4232,8 +4232,8 @@ msgid "Learn More"
 msgstr "Aprender-ne mas"
 
 #: src/view/com/auth/SplashScreen.web.tsx:168
-msgid "Learn more about Bluesky"
-msgstr "Aprender mas de Bluesky"
+msgid "Learn more about Gander"
+msgstr "Aprender mas de Gander"
 
 #: src/view/com/auth/server-input/index.tsx:218
 msgid "Learn more about self hosting your PDS."
@@ -4254,13 +4254,13 @@ msgstr "Aprender mas sobre esta advertencia"
 
 #: src/components/verification/VerificationsDialog.tsx:150
 #: src/components/verification/VerifierDialog.tsx:117
-msgid "Learn more about verification on Bluesky"
-msgstr ""
+msgid "Learn more about verification on Gander"
+msgstr "Obtenga más información sobre la verificación en Gander"
 
 #: src/screens/Settings/PrivacyAndSecuritySettings.tsx:99
 #: src/screens/Settings/PrivacyAndSecuritySettings.tsx:102
-msgid "Learn more about what is public on Bluesky."
-msgstr "Mas información sobre lo que ye publico en Bluesky."
+msgid "Learn more about what is public on Gander."
+msgstr "Mas información sobre lo que ye publico en Gander."
 
 #: src/components/moderation/ContentHider.tsx:239
 #: src/view/com/auth/server-input/index.tsx:220
@@ -4289,8 +4289,8 @@ msgid "Leave them all unchecked to see any language."
 msgstr "Deixa-los toz sin marcar pa veyer cualsequier idioma."
 
 #: src/view/com/modals/LinkWarning.tsx:65
-msgid "Leaving Bluesky"
-msgstr "Salir de Bluesky"
+msgid "Leaving Gander"
+msgstr "Salir de Gander"
 
 #: src/screens/SignupQueued.tsx:155
 msgid "left to go."
@@ -7331,8 +7331,8 @@ msgid "Sign in or create an account"
 msgstr ""
 
 #: src/components/dialogs/Signin.tsx:75
-msgid "Sign in or create your account to join the conversation!"
-msgstr "Inicia sesión u crea una cuenta pa unir-te a la conversación!"
+msgid "Sign in or create your account to find your smile!"
+msgstr "Inicia sesión o crea tu cuenta para encontrar tu sonrisa!"
 
 #: src/components/AccountList.tsx:68
 msgid "Sign in to account that is not listed"

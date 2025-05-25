@@ -1,0 +1,32 @@
+msgid ""
+msgstr ""
+"Language: innu\n"
+
+#: src/screens/Settings/AccountSettings.tsx:68
+msgid "(no email)"
+msgstr "(eukuak tshika utauassiu)"
+
+#: src/lib/hooks/useTimeAgo.ts:169
+msgid "{0, plural, one {# day} other {# days}}"
+msgstr "{0, plural, one {# uapikun} other {# uapikunat}}"
+
+#: src/screens/Profile/ProfileFollowers.tsx:40
+msgid "{0, plural, one {# follower} other {# followers}}"
+msgstr "{0, plural, one {# uetshimau} other {# uetshimaut}}"
+
+#: src/screens/Profile/ProfileFollows.tsx:40
+msgid "{0, plural, one {# following} other {# following}}"
+msgstr "{0, plural, one {# uetshimau} other {# uetshimaut}}"
+
+#: src/lib/hooks/useTimeAgo.ts:159
+msgid "{0, plural, one {# hour} other {# hours}}"
+msgstr "{0, plural, one {# uapikun-pishim} other {# uapikun-pishimat}}"
+
+#: src/components/moderation/LabelsOnMe.tsx:53
+msgid "{0, plural, one {# label has} other {# labels have}} been placed on this account"
+msgstr "{0, plural, one {# uapikun} other {# uapikunat}} utauassiu."
+
+#: src/components/moderation/LabelsOnMe.tsx:62
+msgid "{0, plural, one {# label has} other {# labels have}} been placed on this content"
+msgstr "{0, plural, one {# uapikun} other {# uapikunat}} utauassiu."
+

@@ -1,0 +1,32 @@
+msgid ""
+msgstr ""
+"Language: cr\n"
+
+#: src/screens/Settings/AccountSettings.tsx:68
+msgid "(no email)"
+msgstr "(kîsikâw kîkway)"
+
+#: src/lib/hooks/useTimeAgo.ts:169
+msgid "{0, plural, one {# day} other {# days}}"
+msgstr "{0, plural, one {# kîsikâw} other {# kîsikâwak}}"
+
+#: src/screens/Profile/ProfileFollowers.tsx:40
+msgid "{0, plural, one {# follower} other {# followers}}"
+msgstr "{0, plural, one {# itwêw} other {# itwêwak}}"
+
+#: src/screens/Profile/ProfileFollows.tsx:40
+msgid "{0, plural, one {# following} other {# following}}"
+msgstr "{0, plural, one {# itwêw} other {# itwêwak}}"
+
+#: src/lib/hooks/useTimeAgo.ts:159
+msgid "{0, plural, one {# hour} other {# hours}}"
+msgstr "{0, plural, one {# kîsikâw-pîsimwa} other {# kîsikâw-pîsimwak}}"
+
+#: src/components/moderation/LabelsOnMe.tsx:53
+msgid "{0, plural, one {# label has} other {# labels have}} been placed on this account"
+msgstr "{0, plural, one {# kîsikâw} other {# kîsikâwak}} kîkway kîsikâw iskwêwak."
+
+#: src/components/moderation/LabelsOnMe.tsx:62
+msgid "{0, plural, one {# label has} other {# labels have}} been placed on this content"
+msgstr "{0, plural, one {# kîsikâw} other {# kîsikâwak}} kîkway kîsikâw iskwêwak."
+
